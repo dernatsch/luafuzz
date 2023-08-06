@@ -1,0 +1,10 @@
+[package]
+name = "luafuzz"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+basic_mutator = { version = "0.1.0", path = "../mutator" }
+mlua = { version = "0.8.9", features = ["luajit"] }
